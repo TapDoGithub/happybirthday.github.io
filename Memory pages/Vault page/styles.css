@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Vogue';
+    src: url(../../Vogue.ttf);
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url(../../vault-back.jpg);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffb535;
+}
+
+h1{
+    font-family: 'Vogue';
+}
+
+.container {
+    text-align: center;
+    background-color: #2121265e;
+    padding: 20px;
+    border: #7f7f7f9a outset;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+    backdrop-filter: blur(2px);
+}
+
+.container.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#pinDisplay {
+    font-size: 24px;
+    margin-bottom: 20px;
+    height: 30px;
+    color: #f4f4f4;
+}
+
+.pin-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.pin-btn {
+    padding: 10px 4px;
+    font-size: 18px;
+    border: #ffb535 inset;
+    background-color: #ffffff00;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.pin-btn:hover {
+    background-color: #ffb53570;
+}
