@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="">
     <style>
         body{
-            background-image: url("../images.jpg");
+            background-image: url("../Vault.png");
             background-size: cover;
-            background-position: ;
         }
-        h2{
+        a{
             color: white;
             background: black;
             text-align: center;
@@ -20,13 +19,21 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding:30px;
-            border-radius: 5px;
+            border-radius: 50%;
+        }
+        #entry-btn{
+            width: 100px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            transition: .5s ease;
+        }
+        #entry-btn:hover{
+            transform: translatey(-10px);
         }
     </style>
 </head>
 <body>
-    <audio src="../Christmascore.mp3" autoplay loop hidden></audio>
-    <h2>Come back later</h2>
+    <audio src="../frenchrevolution.mp3" autoplay loop hidden></audio>
+    <a href="Vault page/VaultMenu.html"><img src="../Arrow.png" id="entry-btn"/></a>
 </body>
 </html>
