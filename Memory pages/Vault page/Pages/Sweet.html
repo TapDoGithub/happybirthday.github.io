@@ -14,6 +14,9 @@
     <script>
         var audio = new Audio('CMIYGL.mp3');
         audio.play();
+        window.onbeforeunload = function (e) {
+            audio.play();
+        }
     </script>
 </body>
 </html>
